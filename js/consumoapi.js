@@ -2,7 +2,7 @@
 
 const escolherCurso = async() =>{
 
-    const url = `http://localhost:8080/cursos/`
+    const url = `https://projeto-lions.netlify.app/.netlify/functions/api/cursos`
 
     const response = await fetch(url)
 
@@ -13,7 +13,7 @@ const escolherCurso = async() =>{
 
 const listarEstudantes = async(curso) => {
 
-    const url = `http://localhost:8080/alunos/?courseNome=${curso}`
+    const url = `https://projeto-lions.netlify.app/.netlify/functions/api/alunos/?courseNome=${curso}`
 
     const response = await fetch(url)
 
@@ -24,7 +24,7 @@ const listarEstudantes = async(curso) => {
 }
 const getAlunosStatus = async (status) => {
 
-    const url = `http://localhost:8080/alunos/?statusNome=${status}`
+    const url = `https://projeto-lions.netlify.app/.netlify/functions/api/alunos/?statusNome=${status}`
 
     const response = await fetch(url)
 
@@ -35,7 +35,7 @@ const getAlunosStatus = async (status) => {
 
 const getAlunoMatricula = async (matricula) => {
 
-    const url = `http://localhost:8080/alunos/?matriculaNumber=${matricula}`
+    const url = `https://projeto-lions.netlify.app/.netlify/functions/api/alunos/?matriculaNumber=${matricula}`
 
     const response = await fetch(url)
 
@@ -46,7 +46,7 @@ const getAlunoMatricula = async (matricula) => {
 
 const getAlunosCurso = async (curso) => {
 
-    const url = `http://localhost:8080/alunos/?courseName=${curso}`
+    const url = `https://projeto-lions.netlify.app/.netlify/functions/api/alunos/?courseName=${curso}`
 
     const response = await fetch(url)
 
